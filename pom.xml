@@ -42,5 +42,37 @@
         </plugins>
       </build>
     </profile>
+    <profile>
+    	<id>develop</id>
+    	<build>
+	        <finalName>SampleApp</finalName>
+	        <plugins>
+	            <plugin>
+	                <groupId>org.apache.maven.plugins</groupId>
+	                <artifactId>maven-war-plugin</artifactId>
+	                <version>3.2.3</version>
+	            </plugin>
+	            <plugin>
+	                <groupId>io.openliberty.tools</groupId>
+	                <artifactId>liberty-maven-plugin</artifactId>
+	                <version>3.2</version>
+	                <configuration>
+	                    <serverName>TsRanaServer</serverName>
+	                </configuration>
+	            </plugin>
+	            <!-- <plugin>
+	                <groupId>org.apache.maven.plugins</groupId>
+	                <artifactId>maven-failsafe-plugin</artifactId>
+	                <version>2.22.2</version>
+	                <configuration>
+	                    <systemPropertyVariables>
+	                        <http.port>9080</http.port>
+	                        <war.name>SampleApp</war.name>
+	                    </systemPropertyVariables>
+	                </configuration>
+	            </plugin> -->
+	        </plugins>
+	    </build>
+    </profile>
   </profiles>
 </project>
