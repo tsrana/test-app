@@ -1,0 +1,5 @@
+*.md
+.classpath
+.project
+.settings
+target/
