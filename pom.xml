@@ -39,14 +39,14 @@
               		  <warName>SampleApp</warName>
                 </configuration>
             </plugin>
-            <plugin>
+            <!-- <plugin>
 				<groupId>io.openliberty.tools</groupId>
 	                <artifactId>liberty-maven-plugin</artifactId>
 	                <version>3.2</version>
 	                <configuration>
 	                    <serverName>TsRanaServer</serverName>
 	                </configuration>
-			</plugin>
+			</plugin> -->
         </plugins>
       </build>
     </profile>
